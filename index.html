@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     <!-- TODO: Add a calc favicon -->
     <!-- TODO: Listen for keyboard press -->
 
     <div class="calc">
-        <table border="5px">
+        <table border="3px">
             <!-- row-1 -->
             <tr class="row-1">
-                <td class="display" rowspan="3" colspan="5">display</td>
+                <td class="display" rowspan="2" colspan="5">
+                    <p id="calc-output"></p>
+                    <!-- disp -->
+                    <p id="calc-keys"></p>
+                </td>
             </tr>
 
             <tr></tr>   <!-- row-2 -->
 
-            <tr></tr>   <!-- row-3 -->
+            <!-- <tr></tr>   row-3 -->
 
             <!-- row-4 -->
             <tr class="row-4">
-                <td class="open-()"><button>(</button></td>
-                <td class="close-()"><button>)</button></td>
+                <td class="open-par"><button>(</button></td>
+                <td class="close-par"><button>)</button></td>
                 <td class="cube-root"><button><sub>3</sub> &Sqrt;</button></td>
-                <td class="del" rowspan="2"><button> Del<!--Del icon --> </button></td>
-                <td class="clear" rowspan="2"><button>Clr</button></td>
+                <td class="del" rowspan="2"><button> CE<!--Del icon --> </button></td>
+                <td class="clear" rowspan="2"><button>AC</button></td>
             </tr>
 
             <!-- row-5 -->
@@ -82,5 +87,7 @@
 
         </table>
     </div>
+
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
