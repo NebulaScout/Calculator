@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: #000103;
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 150px;
+}
+
+table {
+    width: 30%;
+    border-collapse: collapse;
+
+}
+
+tr {
+    height: 70px;
+}
+
+td {
+    text-align: center;
+    color: #fffffa;
+}
+
+button {
+    font-size: 2.5em;
+    border: none;
+    color: #fffffa;   
+}
+
+td, button {
+    cursor: pointer;
+}
+
+.calc .row-8 .equal-to, .equal-to button {
+    background-color: #ff4000;
+}
+
+.blur {
+    opacity: 0.2;
+}
