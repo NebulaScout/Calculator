@@ -15,9 +15,9 @@
             <!-- row-1 -->
             <tr class="row-1">
                 <td class="display" rowspan="2" colspan="5">
-                    <p id="calc-output"></p>
+                    <p id="calc-output">60</p>
                     <!-- disp -->
-                    <p id="calc-keys"></p>
+                    <p id="calc-operation">0</p>
                 </td>
             </tr>
 
@@ -27,26 +27,26 @@
 
             <!-- row-4 -->
             <tr class="row-4">
-                <td class="open-par"><button>(</button></td>
-                <td class="close-par"><button>)</button></td>
-                <td class="cube-root"><button><sub>3</sub> &Sqrt;</button></td>
-                <td class="del" rowspan="2"><button> CE<!--Del icon --> </button></td>
-                <td class="clear" rowspan="2"><button>AC</button></td>
+                <td class="open-par"><button data-action="open-par">(</button></td>
+                <td class="close-par"><button data-action="close-par">)</button></td>
+                <td class="cube-root"><button data-action="cb-root"><sub>3</sub> &Sqrt;</button></td>
+                <td class="del" rowspan="2"><button data-action="clear-all"> CE </button></td>
+                <td class="clear" rowspan="2"><button data-action="clear-once">AC</button></td>
             </tr>
 
             <!-- row-5 -->
             <tr class="row-5">
-                <td class="sq-root"><button>
+                <td class="sq-root"><button data-action="sq-root">
                     <math>
                         <msqrt><mi>x</mi></msqrt>
                     </math>
                 </button></td>
 
-                <td class="square-num"><button>
+                <td class="square-num"><button data-action="square">
                     <math><mi>x</mi><sup>2</sup></math>
                 </button></td>
 
-                <td class="cube-num"><button>
+                <td class="cube-num"><button data-action="cube">
                     <math><mi>x</mi><sup>3</sup></math>
                 </button></td>
             </tr>
@@ -54,10 +54,10 @@
             <!-- row-6 -->
             <tr class="row-6">
                 <td class="nine"><button>9</button></td>
-                <td class="dot"><button>.</button></td>
-                <td class="modulo"><button>mod</button></td>
-                <td class="divide"><button>&divide</button></td>
-                <td class="subtract"><button>-</button></td>
+                <td class="dot"><button data-action="decimal">.</button></td>
+                <td class="modulo"><button data-action="modulo">mod</button></td>
+                <td class="divide"><button data-action="divide">&divide</button></td>
+                <td class="subtract"><button data-action="subtract">-</button></td>
             </tr>
 
             <!-- row-7 -->
@@ -65,8 +65,8 @@
                 <td class="six"><button>6</button></td>
                 <td class="seven"><button>7</button></td>
                 <td class="eight"><button>8</button></td>
-                <td class="product"><button>&times</button></td>
-                <td class="add"><button>+</button></td>
+                <td class="product"><button data-action="multiply">&times</button></td>
+                <td class="add"><button data-action="add">+</button></td>
             </tr>
 
             <!-- row-8 -->
@@ -74,8 +74,8 @@
                 <td class="three"><button>3</button></td>
                 <td class="four"><button>4</button></td>
                 <td class="five"><button>5</button></td>
-                <td class="answer" rowspan="2"><button>Ans</button></td>
-                <td class="equal-to" rowspan="2"><button>=</button></td>
+                <td class="answer" rowspan="2"><button data-action="currentAnswer">Ans</button></td>
+                <td class="equal-to" rowspan="2"><button data-action="calculate">=</button></td>
             </tr>
 
             <!-- row-9 -->
