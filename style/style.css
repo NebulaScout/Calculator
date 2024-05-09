@@ -23,6 +23,25 @@ table {
 
 }
 
+p {
+    float: right;
+    /* margin: 0px;
+    padding: 0px; */
+    /* padding: 5px; */
+    /* margin-right: 0px; */
+}
+
+#calc-output {
+    font-size: 1.7em;
+
+}
+
+#calc-operation {
+    margin-top: 20%;
+    font-size: 2em;
+    
+}
+
 tr {
     height: 70px;
 }
